@@ -1,10 +1,9 @@
 class Solution:
     def missingNum(self, arr):
         # code here
-        n=len(arr)+1
-        count=n*(n+1)//2
-        arr_c=0
-      
+        l=len(arr)+1
+        total=(l*(l+1))//2
+        count=0
         for i in arr:
-            arr_c+=i
-        return count-arr_c
+            count+=i
+        return total -count
